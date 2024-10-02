@@ -26,7 +26,7 @@ class CalculatorTest {
     @Tag("smokeDiff")
     void diff(int a, int b, int resultExp) {
         Calculator calc = new Calculator();
-        int resultSum = calc.diff(a, b);
-        Assertions.assertEquals(resultExp, resultSum, "Ошибка вычитания");
+        int resultDiff = calc.diff(a, b);
+        Assertions.assertEquals(resultExp, resultDiff, "Ошибка вычитания");
     }
 }
