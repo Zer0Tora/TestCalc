@@ -11,7 +11,8 @@ class CalculatorTest {
     @ParameterizedTest (name = "#{index} Сумма {0} и {1} равна {2}")
     @CsvSource({"2, 3, 5", "5, -10, -5", "0, 0, 0"})
     @DisplayName("Тест суммы двух чисел")
-    @Tags({})
+    @Tag("smoke")
+    @Tag("smokeSumm")
     void summ(int a, int b, int resultExp) {
         Calculator calc = new Calculator();
         int resultSum = calc.summ(a, b);
@@ -21,7 +22,8 @@ class CalculatorTest {
     @ParameterizedTest (name = "#{index} Разность {0} и {1} равна {2}")
     @CsvSource({"7, 3, 4", "5, -10, 15", "0, 0, 0"})
     @DisplayName("Тест разности двух чисел")
-    @Tags({})
+    @Tag("smoke")
+    @Tag("smokeDiff")
     void diff(int a, int b, int resultExp) {
         Calculator calc = new Calculator();
         int resultSum = calc.diff(a, b);
